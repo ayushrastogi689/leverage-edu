@@ -5,17 +5,15 @@ import "./Carousel.css";
 
 const Carousel = ({ imageUrls }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
-
   useEffect(() => {
-      const interval = setInterval(() => {
-       nextSlide();
+    const interval = setInterval(() => {
+      nextSlide();
     }, 3000);
 
-   return () => {
-         clearInterval(interval);
-       };
-     }, []);
-
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
   const nextSlide = () => {
     setCurrentSlide((prevSlide) => (prevSlide + 1) % imageUrls.length);
   };
@@ -29,7 +27,7 @@ const Carousel = ({ imageUrls }) => {
   return (
     <div className="carousel">
       <button className="prev-button" onClick={prevSlide}>
-        Prev
+        {"<"}
       </button>
       <img
         className="slide-image"
@@ -37,7 +35,7 @@ const Carousel = ({ imageUrls }) => {
         alt={`Slide ${currentSlide + 1}`}
       />
       <button className="next-button" onClick={nextSlide}>
-        Next
+        {">"}
       </button>
     </div>
   );
