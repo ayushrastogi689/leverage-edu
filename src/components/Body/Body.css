@@ -82,12 +82,7 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  opacity: 1;
-  transition: 0.3s ease-in-out;
-}
-
-.whatsapp-logo:hover {
-  opacity: 1;
+ 
 }
 
 .whatsapp-logo img {
