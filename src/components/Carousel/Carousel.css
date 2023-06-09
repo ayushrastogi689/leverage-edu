@@ -7,7 +7,8 @@
 
 .slide-image {
   max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 450px;
 }
 
 .prev-button,
@@ -16,11 +17,48 @@
   top: 50%;
   transform: translateY(-50%);
   padding: 10px;
+  margin: 10px;
   font-size: 20px;
   background-color: transparent;
-  border: none;
   color: #fff;
   cursor: pointer;
+  border: 3px solid gray;
+  border-radius: 500px;
+}
+
+.prev-button {
+  left: 10px;
+}
+
+.next-button {
+  right: 10px;
+}
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.slide-image {
+  max-width: 100%;
+  width: 300px;
+  height: 450px;
+}
+
+.prev-button,
+.next-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  margin: 10px;
+  font-size: 20px;
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  border: 3px solid gray;
+  border-radius: 500px;
 }
 
 .prev-button {
