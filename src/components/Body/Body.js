@@ -30,6 +30,11 @@ const Body = () => {
           <p>95% of our students get an admit in less than 4 weeks</p>
           <p>Our students finished university to work at global offices of:</p>
         </div>
+        <img
+          src="https://leverageedu.com/_next/image/?url=https%3A%2F%2Fleverageeduhome.gumlet.io%2FFrame3430.png&w=640&q=75"
+          alt="companies"
+          className="companies-image"
+        />
       </div>
       <div className="right-column">
         
