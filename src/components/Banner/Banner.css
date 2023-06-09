@@ -1,0 +1,24 @@
+.banner {
+  background-color: #002541;
+  padding: 10px;
+}
+
+.banner-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner-content h2 {
+  color: white;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.banner-content button {
+  border-radius: 8px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 5px 20px;
+}
