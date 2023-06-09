@@ -65,3 +65,7 @@
 .description p {
   font-size: 15px;
 }
+
+.right-column {
+  width: 65%;
+}
