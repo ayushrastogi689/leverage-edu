@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #050607;
+  color: white;
+  padding: 10px;
+}
+
+.navbar-logo {
+  margin-left: 130px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin-right: 10px;
+}
+
+.navbar-links a {
+  color: #c2cad3;
+  text-decoration: none;
+}
+
+.navbar-icons {
+  display: flex;
+  gap: 10px; 
+}
+
+.navbar-icons img {
+  margin-right: 20px;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  background-color: #c2cad3;
+}
