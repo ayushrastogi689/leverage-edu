@@ -1,6 +1,9 @@
 .body-container {
+  overflow-x: hidden !important;
+  overflow-y: hidden !important;
   display: flex;
   margin-top: 0px;
+  height: 100vh;
   background: linear-gradient(to right, #050607, #002541);
 }
 
@@ -68,4 +71,26 @@
 
 .right-column {
   width: 65%;
+}
+
+.carousel {
+  width: 500px;
+  height: 500px;
+}
+
+.whatsapp-logo {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
+}
+
+.whatsapp-logo:hover {
+  opacity: 1;
+}
+
+.whatsapp-logo img {
+  width: 40px;
+  height: 40px;
 }
