@@ -1,9 +1,7 @@
 .body-container {
-  overflow-x: hidden !important;
-  overflow-y: hidden !important;
+  overflow: hidden !important;
   display: flex;
   margin-top: 0px;
-  height: 100vh;
   background: linear-gradient(to right, #050607, #002541);
 }
 
