@@ -1,38 +1,59 @@
-import React from "react";
+"use client";
+
+import React, { useState } from "react";
 import "./Navbar.css";
+import { CgMenu, CgCloseR } from "react-icons/cg";
+
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
-    <div className="navbar">
+    <nav className="navbar">
       <img
         className="navbar-logo"
         src="https://leverageedunew.s3.us-east-1.amazonaws.com/assets/img/logo.png"
         alt="company_logo"
       />
-
-      <ul className="navbar-links">
-        <li>
-          <a href="#">Study Abroad</a>
-        </li>
-        <li>
-          <a href="#">Accommodation</a>
-        </li>
-        <li>
-          <a href="#">Test Prep</a>
-        </li>
-        <li>
-          <a href="#">Finance</a>
-        </li>
-        <li>
-          <a href="#">Community</a>
-        </li>
-        <li>
-          <a href="#">Products</a>
-        </li>
-        <li>
-          <a href="#">More</a>
-        </li>
-      </ul>
-      <div className="navbar-icons ">
+      <div className={isMenuOpen ? `${active}` : ""}>
+        <ul className="navbar-links">
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Study Abroad
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Accommodation
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Test Prep
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Finance
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Community
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              Products
+            </a>
+          </li>
+          <li>
+            <a href="#" onClick={() => setIsMenuOpen(false)}>
+              More
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div className="navbar-icons">
         <img
           className="search"
           src="https://leverageedunew.s3.amazonaws.com/landing-pages/search_icon.png"
@@ -49,7 +70,24 @@ const Navbar = () => {
           alt="profile-icon"
         />
       </div>
-</div>
+
+      {/*Nav Icons */}
+      <div>
+        <div className="mobile-navbar-btn">
+          {" "}
+          <CgMenu
+            name="menu-outline"
+            className="mobile-nav-icon"
+            onClick={() => setIsMenuOpen(true)}
+          />{" "}
+          <CgCloseR
+            name="close-outline"
+            className="mobile-nav-icon close-outline"
+            onClick={() => setIsMenuOpen(false)}
+          />
+        </div>
+      </div>
+    </nav>
   );
 };
 
